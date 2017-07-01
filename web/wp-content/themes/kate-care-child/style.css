@@ -1,0 +1,138 @@
+/*
+ Theme Name:   Kate Care VC Child
+ Description:  Custom Child theme for KateCareNannies.com. Child theme for Visual Composer Starter Theme
+ Author:       Tyler Vollick
+ Author URI:   http://tylervollick.com
+ Template:     visual-composer-theme
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  kate-care-child
+*/
+
+/**
+ *	COLORS
+ *
+ *	light-blue: #4fa5ae;
+ *	dark-blue: #0f3647;
+ *  salmon: #dc5a5c;
+ *
+ */ 
+
+.navbar-wrapper { padding: 5px 15px; }
+#homepage-content { padding-top: 0; padding-bottom: 0;}
+#homepage-content .main-content { padding-bottom: 0;  }
+
+.page-hero-banner { height: 250px; background-size: cover; background-position: center; background-repeat: no-repeat; position: relative;  }
+.page-hero-banner:after { content: ''; display: block; position: absolute; width: 100%; height:100%; background-color: rgba(255,255,255, 0.7); z-index: 0;  }
+.page-hero-banner .page-title-wrapper { position: absolute; left: 0; bottom: 30px; width: 100%; z-index: 2;}
+.page-title { margin-bottom: 0;  }
+@media (min-width: 768px) {
+	.page-hero-banner { height: 400px; }
+	.page-title { font-size: 72px; }
+}
+
+
+/* visual composer overrides */ 
+.vc_col-has-fill>.vc_column-inner, 
+.vc_row-has-fill+.vc_row-full-width+.vc_row>.vc_column_container>.vc_column-inner, 
+.vc_row-has-fill+.vc_row>.vc_column_container>.vc_column-inner, 
+.vc_row-has-fill+.vc_vc_row>.vc_row>.vc_vc_column>.vc_column_container>.vc_column-inner, 
+.vc_row-has-fill+.vc_vc_row_inner>.vc_row>.vc_vc_column_inner>.vc_column_container>.vc_column-inner, 
+.vc_row-has-fill>.vc_column_container>.vc_column-inner, 
+.vc_row-has-fill>.vc_row>.vc_vc_column>.vc_column_container>.vc_column-inner, 
+.vc_row-has-fill>.vc_vc_column_inner>.vc_column_container>.vc_column-inner, 
+.vc_section.vc_section-has-fill, 
+.vc_section.vc_section-has-fill+.vc_row-full-width+.vc_section, 
+.vc_section.vc_section-has-fill+.vc_section {
+	padding-top: 60px; 
+}
+
+.vc_row { padding-top: 60px; padding-bottom: 60px;  }
+.vc_row:first-child { padding-top: 0; }
+
+.vc_row.vc_inner { padding-top: 0; padding-bottom: 0;  }
+
+
+.text-white, 
+.text-white h1,
+.text-white h2,
+.text-white h3, 
+.text-white h4, 
+.text-white h5, 
+.text-white h6 { 
+	color: #fff; 
+}
+.light-hero-filter { position: relative; }
+.light-hero-filter > .wpb_column { z-index: 1; }
+.light-hero-filter:before { 
+	display: block;
+	content: ''; 
+	position: absolute; 
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%; 
+	background-color: rgba(255,255,255, 0.3);
+	z-index: 0; 
+}
+.hero-filter_dark { position: relative; }
+.hero-filter_dark > .wpb_column { z-index: 1; }
+.hero-filter_dark:before { 
+	display: block;
+	content: ''; 
+	position: absolute; 
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%; 
+	background-color: rgba(15,54,71, 0.3);
+	z-index: 0; 
+}
+
+
+/* KC BUTTONS */ 
+
+.btn { border-radius: 15px; }
+
+.kc-button-group { margin-left: -5px; margin-right: -5px; }
+.kc-button-group_center { text-align: center; }
+.kc-button-group_left { text-align: left; }
+.kc-button-group_right { text-align: right; }
+.kc-button-group .btn { margin: 0 5px; }
+
+.btn-grey { background-color: #4a4a4a; color: #fff; }
+.btn-grey:hover { background-color: #6f6f6f; color: #fff; }
+.btn-grey:visited,
+.btn-grey:focus { color: #fff; }
+
+.btn-salmon { background-color: #dc5a5c; color: #fff; }
+.btn-salmon:hover { background-color: #F76567; color: #fff; }
+.btn-salmon:visited,
+.btn-salmon:focus { color: #fff; }
+
+.btn-light-blue { background-color: #4fa5ae; color: #fff; }
+.btn-light-blue:hover { background-color: #5BBFC9; color: #fff; }
+.btn-light-blue:visited,
+.btn-light-blue:focus { color: #fff; }
+
+.btn-dark-blue { background-color: #0f3647; color: #fff; }
+.btn-dark-blue:hover { background-color: #154B62; color: #fff; }
+.btn-dark-blue:visited,
+.btn-dark-blue:focus { color: #fff; }
+
+.kc-img-grid { 
+	position: absolute;
+	top: 0; 
+	left: 0; 
+	background-size: cover; 
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%; 
+}
+.img-grid-bg { background-size: cover; background-position: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; opacity: 0.8; }
+.img-grid-square { width: 50%; height: 50%; position: absolute; background-size: cover; background-position: center; background-repeat: no-repeat; z-index: 1;}
+.img-grid-square_tr { top: 0; right: 0;  }
+.img-grid-square_bl { bottom: 0; left: 0;  }
+
+.wpb_text_column img.alignleft { margin-right: 15px; margin-bottom: 15px;  }
